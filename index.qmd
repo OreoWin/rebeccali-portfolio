@@ -1,0 +1,6 @@
+---
+title: ""
+---
+
+<meta http-equiv="refresh" content="0; url=about.html">
+If you are not redirected automatically, go to [About](about.html).
