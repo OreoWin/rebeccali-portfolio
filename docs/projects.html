@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Rebecca Li</title>
+<title>Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,9 +81,6 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Rebecca Li</span>
-    </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -100,8 +97,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
-<span class="menu-text">Resume</span></a>
+    <a class="nav-link" href="./CV.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
@@ -141,25 +138,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="xgboost-vs.-svm-classification-and-model-comparison" class="level3">
-<h3 class="anchored" data-anchor-id="xgboost-vs.-svm-classification-and-model-comparison">XGBoost vs.&nbsp;SVM: Classification and Model Comparison</h3>
-<p><em>Dec 2024</em> <strong>Summary</strong> This project compares the performance and decision boundaries of two popular machine learning algorithms — XGBoost and Support Vector Machine (SVM) — on a simulated binary classification dataset. The goal was to visualize how each model learns nonlinear boundaries and evaluate their relative performance on synthetic data.<br>
-<strong>Process</strong> - Generated 5,000 random data points with two features and binary labels based on their distance from the origin. - Split data into training and testing sets (80/20). - Trained an XGBoost Classifier and an SVM Classifier, both using default hyperparameters. - Evaluated and compared training and testing accuracy for both models. - Visualized decision boundaries using Matplotlib to illustrate model interpretability and overfitting differences.<br>
-<strong>Outcome</strong> - XGBoost: Training Accuracy = 99.95%, Testing Accuracy = 98.7%. - SVM: Training Accuracy = 99.2%, Testing Accuracy = 99.0%. - Both models achieved high accuracy, with SVM showing slightly better generalization on unseen data. - The visualization confirmed that XGBoost’s boundaries were more adaptive but potentially overfitted, while SVM maintained smoother, more generalized boundaries.</p>
+<section id="xgboost-vs.-svm-classification-and-decision-boundaries" class="level3">
+<h3 class="anchored" data-anchor-id="xgboost-vs.-svm-classification-and-decision-boundaries">XGBoost vs.&nbsp;SVM — Classification and Decision Boundaries</h3>
+<p><em>Dec 2024</em></p>
+<p><strong>Summary</strong></p>
+<p>Compared the performance and decision boundaries of two popular machine learning algorithms — XGBoost and Support Vector Machine (SVM) — on a simulated binary classification dataset. The goal was to visualize how each model learns nonlinear boundaries and evaluate their relative performance on synthetic data.</p>
+<p><strong>Process</strong></p>
+<ul>
+<li><p>Generate 5,000 two-feature points with binary labels from a distance-to-origin rule.</p></li>
+<li><p>Split data into train/test (80/20).</p></li>
+<li><p>Train XGBoostClassifier and SVC with default hyperparameters.</p></li>
+<li><p>Evaluate train vs.&nbsp;test accuracy.</p></li>
+<li><p>Visualize decision boundaries with Matplotlib.</p></li>
+</ul>
+<p><strong>Outcome</strong></p>
+<ul>
+<li><p>XGBoost: Train 99.95%, Test 98.7%.</p></li>
+<li><p>SVM: Train 99.2%, Test 99.0%.</p></li>
+<li><p>Both high accuracy; SVM generalizes slightly better, while XGBoost is more adaptive with mild overfit risk.</p></li>
+</ul>
+<p><a href="https://github.com/OreoWin/rebeccali-portfolio/blob/main/files/xgb_svm.py" class="btn btn-primary" target="_blank">View code on GitHub</a> <a href="files/xgb_svm.py">Download .py</a>{.btn .btn-outline-secondary download}</p>
 <hr>
 </section>
 <section id="california-wildfire-damage-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="california-wildfire-damage-analysis">California Wildfire Damage Analysis</h3>
-<p><strong>Summary</strong> This project investigates patterns and relationships among wildfire damage indicators across California using Principal Component Analysis (PCA) and Factor Analysis (FA). The goal was to uncover latent dimensions driving wildfire severity and evaluate the interdependence between physical and economic loss variables.<br>
-<strong>Process</strong> - Collected and cleaned wildfire damage data (acres burned, homes and businesses destroyed, vehicles damaged, injuries, fatalities, and financial loss). - Replaced missing numeric values with their mean and standardized all continuous variables. - Performed PCA to reduce dimensionality and visualize the contribution of each factor to total variance. - Conducted Factor Analysis (using Maximum Likelihood Estimation + Varimax rotation) to identify underlying constructs that explain correlated damage metrics. - Evaluated factor adequacy via KMO test (= 0.5) and Bartlett’s test (p = 0.69). <strong>Outcome</strong> - The first two principal components explained roughly 37 % of total variance, highlighting Area Burned and Financial Loss as dominant variables. - Factor Analysis revealed two interpretable factors: one related to property and economic damage, and another to physical impact and casualties. - Findings emphasize that financial losses are strongly correlated with infrastructure destruction, while injuries and fatalities form a separate dimension of wildfire severity.</p>
+<p><strong>Summary</strong></p>
+<p>Investigated patterns and relationships among wildfire damage indicators across California using Principal Component Analysis (PCA) and Factor Analysis (FA). The goal was to uncover latent dimensions driving wildfire severity and evaluate the interdependence between physical and economic loss variables.</p>
+<p><strong>Process</strong></p>
+<ul>
+<li><p>Collected and cleaned wildfire damage data (acres burned, homes/businesses destroyed, vehicles damaged, injuries, fatalities, financial loss).</p></li>
+<li><p>Replaced missing numeric values with mean imputation; standardized continuous variables.</p></li>
+<li><p>Performed PCA to reduce dimensionality and visualize factor contributions to total variance.</p></li>
+<li><p>Conducted Factor Analysis (MLE + Varimax) to identify constructs explaining correlated damage metrics.</p></li>
+<li><p>Evaluated factor adequacy via KMO (= 0.5) and Bartlett’s test (p = 0.69).</p></li>
+</ul>
+<p><strong>Outcome</strong></p>
+<ul>
+<li><p>First two principal components explained ~37% of total variance, with Area Burned and Financial Loss dominant.</p></li>
+<li><p>Factor Analysis revealed two interpretable factors: (1) property/economic damage and (2) physical impact/casualties.</p></li>
+<li><p>Findings suggest financial losses correlate strongly with infrastructure destruction, while injuries/fatalities form a distinct severity dimension.</p></li>
+</ul>
+<p><a href="files/wildfair.pdf" class="btn btn-primary" target="_blank">California Wildfire Damage Analysis</a></p>
 <hr>
 </section>
 <section id="portfolio-construction-and-risk-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="portfolio-construction-and-risk-analysis">Portfolio Construction and Risk Analysis</h3>
-<p><em>Feb 2025</em> <strong>Summary</strong> This project focuses on portfolio optimization and risk evaluation using real-world stock data from the technology and financial sectors. The goal was to construct and analyze multiple portfolio types—including Minimum Variance, Tangency, and Target Return portfolios—across different time periods, and to assess their performance using modern portfolio theory and CAPM.<br>
-<strong>Process</strong> - Collected and cleaned daily and monthly historical stock prices (2020–2023) and computed log-returns. - Applied Markowitz Mean-Variance Optimization in R to build portfolios targeting annual expected returns of 5%, 7.5%, 10%, 12.5%, and 15%, under a no-short-selling constraint. - Computed tangency portfolios and minimum variance portfolios, integrating a dynamic risk-free rate based on 10-year U.S. Treasury yields. - Conducted CAPM-based risk analysis to estimate each stock’s alpha and beta against SPY and QQQ ETFs, testing significance to evaluate market efficiency. - Extended analysis with Value-at-Risk (VaR) estimation using a multivariate t-distribution to quantify downside risk.<br>
-</p>
-<p><strong>Outcome</strong> - Including financial sector stocks improved diversification and reduced portfolio volatility. - Tangency portfolios exhibited the highest Sharpe Ratios, showing superior risk-adjusted returns. - CAPM results revealed most alphas were statistically insignificant, consistent with market efficiency. - VaR analysis confirmed that Tangency Portfolios carried higher potential downside risk but delivered better long-term returns.</p>
+<p><em>Feb 2025</em></p>
+<p><strong>Summary</strong></p>
+<p>Focused on portfolio optimization and risk evaluation using real-world stock data from the technology and financial sectors. The goal was to construct and analyze multiple portfolio types—including Minimum Variance, Tangency, and Target Return portfolios—across different time periods, and to assess their performance using modern portfolio theory and CAPM.</p>
+<p><strong>Process</strong></p>
+<ul>
+<li><p>Collected daily/monthly prices (2020–2023) and computed log-returns.</p></li>
+<li><p>Applied Markowitz Mean–Variance Optimization in R under a no-short-selling constraint for 5%, 7.5%, 10%, 12.5%, and 15% target returns.</p></li>
+<li><p>Computed Tangency and Minimum Variance portfolios, using a dynamic risk-free rate from 10-year U.S. Treasury yields.</p></li>
+<li><p>Ran CAPM to estimate alpha/beta vs.&nbsp;SPY and QQQ; tested significance to gauge market efficiency.</p></li>
+<li><p>Estimated Value-at-Risk (VaR) with a multivariate t-distribution to quantify downside risk.</p></li>
+</ul>
+<p><strong>Outcome</strong></p>
+<ul>
+<li><p>Including financial sector stocks improved diversification and reduced volatility.</p></li>
+<li><p>Tangency portfolios achieved the highest Sharpe ratios (better risk-adjusted returns).</p></li>
+<li><p>CAPM results showed most alphas were statistically insignificant (consistent with market efficiency).</p></li>
+<li><p>VaR indicated Tangency portfolios carry higher potential downside risk yet deliver superior long-term returns.</p></li>
+</ul>
 <p><a href="files/Portfolio Construction and Risk Analysis.pdf" class="btn btn-primary" target="_blank">Portfolio Construction and Risk Analysis</a></p>
 
 

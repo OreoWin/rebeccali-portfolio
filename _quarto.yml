@@ -3,15 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "Rebecca Li"
   navbar:
     left:
       - href: about.qmd
         text: About
       - href: projects.qmd
         text: Projects
-      - href: resume.qmd
-        text: Resume
+      - href: CV.qmd
+        text: CV
       - href: contact.qmd
         text: Contact
   page-footer:

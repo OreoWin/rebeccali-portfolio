@@ -6,15 +6,15 @@ title: ""
 
 Welcome! I'm Rebecca Li, currently pursuing an M.S. in Applied Statistics and Data Science at **UCLA**. Prior to UCLA, I earned dual B.A. degrees in Statistics and Economics from **UC Davis**.
 
-I’m passionate about uncovering the stories behind data — finding the patterns that explain human behavior and the insights that drive better decisions.
+I’m passionate about uncovering the stories behind data — finding the patterns that explain human behavior and the insights that drive better decisions. My interest in marketing analytics began during my internship at Li Auto, where I analyzed intelligent driving and referral data to understand user behavior. That experience sparked a deeper curiosity about how data can guide real-world business strategy.
 
-**Skills**
-SQL(HiveQL,MySQL) 
-- Python(Numpy,Pandas,Matplotlib) Airflow K-means Clustering Tabelau/Power BI/SPSS Interactive Dashboards
+Now, I’m conducting market research and marketing analysis for [AutoUnify](https://autounify.com){target="_blank"} where I explore how data integration can empower the automotive industry.
 
 **Graduating June 2026 \| Actively seeking full-time opportunities**
 
 📧 [rebeccaisme12138\@gmail.com](mailto:rebeccaisme12138@gmail.com)
+
+[resume](files/resume.pdf){.btn .btn-primary target="_blank"}
 
 ::: {style="clear: both;"}
 :::
