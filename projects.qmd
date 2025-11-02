@@ -29,8 +29,8 @@ Compared the performance and decision boundaries of two popular machine learning
 
 - Both high accuracy; SVM generalizes slightly better, while XGBoost is more adaptive with mild overfit risk.
 
-[View code on GitHub](https://github.com/OreoWin/rebeccali-portfolio/blob/main/files/xgb_svm.py){.btn .btn-primary target=_blank}
-[Download .py](files/xgb_svm.py){.btn .btn-outline-secondary download}
+[View PDF](files/xgb_vsm.pdf){.btn .btn-primary target="_blank"}
+
 
 
 ------------------------------------------------------------------------
@@ -62,7 +62,7 @@ Investigated patterns and relationships among wildfire damage indicators across 
 - Findings suggest financial losses correlate strongly with infrastructure destruction, while injuries/fatalities form a distinct severity dimension.
 
 
-[California Wildfire Damage Analysis](files/wildfair.pdf){.btn .btn-primary target="_blank"}
+[View PDF](files/wildfair.pdf){.btn .btn-primary target="_blank"}
 
 ------------------------------------------------------------------------
 
@@ -95,4 +95,4 @@ Focused on portfolio optimization and risk evaluation using real-world stock dat
 
 - VaR indicated Tangency portfolios carry higher potential downside risk yet deliver superior long-term returns.
 
-[Portfolio Construction and Risk Analysis](files/Portfolio%20Construction%20and%20Risk%20Analysis.pdf){.btn .btn-primary target="_blank"}
+[View PDF](files/Portfolio%20Construction%20and%20Risk%20Analysis.pdf){.btn .btn-primary target="_blank"}
